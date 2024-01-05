@@ -8,8 +8,16 @@ This repo builds the required AWS Networking and EKS resources to run self hoste
 - aws cli
 - kubectl
 - helm
+- AWS Key
 
 ## Getting Started
+
+### Update Variable file with AWS Key info
+Change the directory to the location with the terraform config files
+```
+cd quickstart/2vpc-2eks-multiregion
+```
+Modify the '''my.auto.tfvars''' to update the '''ec2_key_pair_name''' variable
 
 ### Provision Infrastructure
 Use terraform to build the required AWS Infrastructure
