@@ -17,7 +17,9 @@ Change the directory to the location with the terraform config files
 ```
 cd quickstart/2vpc-2eks-multiregion
 ```
-Modify the `my.auto.tfvars` and update the `ec2_key_pair_name` variable
+Modify the `my.auto.tfvars` and update the `ec2_key_pair_name` variable with your key name
+
+**NOTE**, Make sure the key is in both regions `us-east-1` and `us-west-2`.
 
 ### Provision Infrastructure
 Use terraform to build the required AWS Infrastructure
